@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=96d443&c2=638b36&gt=r&gd=dcc
+*/
+background: #96D443;
+background: radial-gradient(at center, #96D443, #638B36);
+}
+
+div {
+    display: block;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image:url(img/grass.jpg);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: auto;
+    background-position: center;
+}
+
+.container {
+    padding: 0;
+    text-decoration: none;
+}
+
+.navbar{
+    width: 100%;
+    height: 5px;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(38, 38, 38, 0.8);
+}
+
+.navbar h1{
+    color: #fff;
+    margin-left: 2.5%;
+}
+
+.navbar ul{
+    margin-right: 2.5%;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright p{
+    color: #fff;
+}
