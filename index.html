@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Spring Defense</title>
 </head>
@@ -13,12 +16,65 @@
             <h1>Spring Defense</h1>
             <ul>
                 <li><a href="#header">PLAY GAME!</a></li>
-                <li><a href="#development-log">DEVELOPMENT LOG</a></li>
-                <li><a href="#playtest">PLAYTEST</a></li>
                 <li><a href="#about">ABOUT</a></li>
+                <li><a href="#playtest">PLAYTEST</a></li>
+                <li><a href="#development-log">DEVELOPMENT LOG</a></li>
             </ul>
         </div>
         <iframe src="spring build/index.html"></iframe>
+    </div>
+    <!--------About---------->
+    <div id="about">
+        <h2>About</h2>
+        <div class="container">
+            <p>Welcome to Spring Defense! Prepare to embark on an exciting journey where you have to protect your 
+                flowers from annoying and parasitic bugs. Spring Defense takes you into a vibrant and blossoming world, teeming with colorful flora and menacing insects.
+            <br><br>
+            In this thrilling 5-lane system game, your mission is clear: protect the precious flowers from the relentless bug invasion. 
+            As the guardian of nature, it's up to you to strategize, plan, and deploy an army to defend your garden. 
+            <br><br>
+            Are you ready to embark on this thrilling adventure? Gear up, harness the power of nature, and join the battle against the bugs in Spring Defense. It's time to blossom and defend!
+            </p>
+        </div>
+    </div>
+    <!----------------PlayTest--------------------->
+    <div id="playtest">
+        <h2>Playtest</h2>
+        <div class="container">
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Alpha')">Alpha Playtest</p>
+                <p class="tab-links" onclick="opentab('Beta')">Beta Playtest</p>
+                <p class="tab-links" onclick="opentab('Final')">Final Deliverables</p>
+            </div>
+            <div class="tab-contents active-tab" id="Alpha">
+                <ul>
+                    <span>In our alpha playtest, we managed to create the most important game mechanics. 
+                        Each of the game mechanics have their own build to clearly demonstrates how it work.
+                    </span>
+                    <li><span>Enemy Spawner: </span>
+                        The enemy spawning mechanic is one of the key component in our game. We had to make sure that it handles spawning multiple enemies
+                        while having different cooldown timer for each of the enemies. We also had to make sure that the enemy walks in a 1 single lane.
+                    </li>
+                    <li><span>Currency System: </span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus mollitia aliquid officia in unde atque molestiae earum odio. Porro a, enim quia ipsum beatae hic assumenda ad temporibus quis.
+                    </li>
+                    <li><span>Drag and Drop UI: </span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus mollitia aliquid officia in unde atque molestiae earum odio. Porro a, enim quia ipsum beatae hic assumenda ad temporibus quis.
+                    </li>
+                    <li><span>Shooting: </span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus mollitia aliquid officia in unde atque molestiae earum odio. Porro a, enim quia ipsum beatae hic assumenda ad temporibus quis.
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Beta">
+                <p>In our beta playtest, We managed to combine all of our game mechanics and put it in one build. We also improved our game based on the comments
+                    that we got from our alpha playtest. We also added a main menu as well as some images to the game.
+                </p>
+            </div>
+            <div class="tab-contents" id="Final">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium at quas velit fugit, minus beatae molestiae tempore soluta impedit exercitationem eaque ducimus inventore dolor voluptates aut facere fugiat modi excepturi!</p>
+            </div>
+        </div>
     </div>
     <!---------------------development log----------------------->
     <div id="development-log">
@@ -27,23 +83,23 @@
             development log coming soon!
         </div>
     </div>
-    <!----------------PlayTest--------------------->
-    <div id="playtest">
-        <h2>Playtest</h2>
-        <div class="container">
-           <h3>Latest Playtest:</h3>
-           <p>Alpha Playtest</p>
-        </div>
-    </div>
-    <!--------About---------->
-    <div id="about">
-        <h2>About</h2>
-        <div class="container">
-            about section coming soon!
-        </div>
-    </div>
     <div class="copyright">
         <p>Copyright © 2023 Spring Defense</p>
     </div>
 </body>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 </html>

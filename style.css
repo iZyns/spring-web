@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
 }
 
 html {
@@ -9,25 +10,18 @@ html {
 }
 
 body {
-/*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=96d443&c2=638b36&gt=r&gd=dcc
-*/
-background: #96D443;
-background: radial-gradient(at center, #96D443, #638B36);
+    background: #fff;
 }
 
-div {
-    display: block;
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #header {
     width: 100%;
     height: 100vh;
-    background-image:url(img/grass.jpg);
-    background-color: rgba(0, 0, 0, 0.1);
-    background-size: auto;
-    background-position: center;
 }
 
 #header iframe{
@@ -38,7 +32,7 @@ div {
 }
 
 .container {
-    padding: 0;
+    padding: 10px 10%;
     text-decoration: none;
 }
 
@@ -50,11 +44,10 @@ div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(38, 38, 38, 0.8);
 }
 
 .navbar h1{
-    color: #fff;
+    color: #080808;
     margin-left: 2.5%;
 }
 
@@ -72,7 +65,70 @@ div {
 .navbar ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
+    color: #080808;
+}
+
+/***About***/
+#about {
+    color: #080808;
+}
+
+#about.p {
+    font-weight: 100;
+}
+
+/***Playtest***/
+#playtest {
+    color: #080808;
+    padding: 80px 0;
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #D4AF37;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    font-weight: 100;
+   display: block;
 }
 
 
@@ -80,7 +136,7 @@ div {
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    background: #262626;
+    background: #080808;
     font-weight: 300;
     margin-top: 20px;
 }
