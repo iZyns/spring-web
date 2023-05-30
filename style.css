@@ -10,7 +10,15 @@ html {
 }
 
 body {
-    background: #fff;
+    background: #272730;
+}
+
+iframe#unityPlayer {
+    position: relative;
+}
+
+p {
+    color: #272730;
 }
 
 h2 {
@@ -22,6 +30,7 @@ h2 {
 #header {
     width: 100%;
     height: 100vh;
+    margin-bottom: 80px;
 }
 
 #header iframe{
@@ -34,7 +43,15 @@ h2 {
 .container {
     padding: 10px 10%;
     text-decoration: none;
+    width: 800px;
+    background-color: #d2e5d6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #272730;
 }
+
 
 .navbar{
     width: 100%;
@@ -47,7 +64,8 @@ h2 {
 }
 
 .navbar h1{
-    color: #080808;
+    color: #b8d5bf;
+    text-transform: uppercase;
     margin-left: 2.5%;
 }
 
@@ -60,26 +78,21 @@ h2 {
     display: inline-block;
     margin: 0 20px;
     position: relative;
+    text-decoration: none;
 }
 
 .navbar ul li a{
     text-decoration: none;
-    text-transform: uppercase;
-    color: #080808;
+    color: #fbfbf4;
 }
 
 /***About***/
-#about {
-    color: #080808;
-}
-
 #about.p {
     font-weight: 100;
 }
 
 /***Playtest***/
 #playtest {
-    color: #080808;
     padding: 80px 0;
 }
 
@@ -102,7 +115,7 @@ h2 {
     content: '';
     width: 0;
     height: 3px;
-    background: #D4AF37;
+    background: #7e9583;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -116,10 +129,6 @@ h2 {
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
-}
-
-.tab-contents ul li span {
-    
 }
 
 .tab-contents {
@@ -136,11 +145,11 @@ h2 {
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    background: #080808;
+    background: #c0d5b8;
     font-weight: 300;
     margin-top: 20px;
 }
 
 .copyright p{
-    color: #fff;
+    color: #272730;
 }
