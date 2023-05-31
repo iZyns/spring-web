@@ -63,10 +63,14 @@ h2 {
     justify-content: space-between;
 }
 
+.navbar a {
+    text-decoration: none;
+    padding-left: 30px;
+}
+
 .navbar h1{
     color: #b8d5bf;
     text-transform: uppercase;
-    margin-left: 2.5%;
 }
 
 .navbar ul{
@@ -83,6 +87,7 @@ h2 {
 
 .navbar ul li a{
     text-decoration: none;
+    font-weight: bold;
     color: #fbfbf4;
 }
 
