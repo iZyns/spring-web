@@ -51,8 +51,26 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     color: #272730;
+    flex-wrap: wrap;
 }
 
+#screenshots {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+#screenshots .container {
+    justify-content: center;
+    align-items: center;
+    padding-left: 65px;
+}
+
+.container img {
+    width: 200px;
+    height: 120px;
+    margin: 10px;
+  }
 
 .navbar{
     width: 100%;
@@ -103,6 +121,10 @@ h2 {
 }
 
 /***About***/
+#about {
+    padding: 40px 0;
+}
+
 #about.p {
     font-weight: 100;
 }
@@ -156,6 +178,25 @@ h2 {
    display: block;
 }
 
+#refereces {
+    padding: 40px 0;
+}
+
+#credits {
+    padding: 40px 0;
+}
+
+.source-code {
+    padding: 40px 0;
+}
+
+#reflection {
+    padding: 40px 0;
+}
+
+#presentation {
+    padding: 40px 0;
+}
 
 .copyright {
     width: 100%;
